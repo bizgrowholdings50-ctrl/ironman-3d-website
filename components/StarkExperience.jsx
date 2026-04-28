@@ -236,6 +236,75 @@ export default function StarkExperience() {
           EXECUTE PROJECT
         </button>
       </section>
+
+      {/* --- ULTRA-PREMIUM DYNAMIC FOOTER --- */}
+      <footer className="relative bg-[#000b25] border-t border-[#B54118]/20 pt-20 pb-10 overflow-hidden">
+        {/* Background Decorative Element */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-[#B54118] to-transparent opacity-50" />
+        
+        <div className="max-w-7xl mx-auto px-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
+            
+            {/* Column 1: Identity */}
+            <div className="space-y-6">
+              <div className="font-['Orbitron'] text-2xl font-black tracking-tighter">
+                UMAR<span className="text-[#B54118]">.OS</span>
+              </div>
+              <p className="text-[10px] tracking-[3px] opacity-40 leading-relaxed uppercase">
+                Specializing in high-performance digital architecture and supply chain optimized web systems.
+              </p>
+              <div className="flex gap-4 text-[10px] tracking-[2px]">
+                <span className="text-[#B54118] animate-pulse">●</span> STATUS: ACCEPTING PROJECTS
+              </div>
+            </div>
+
+            {/* Column 2: Navigation HUD */}
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <h4 className="text-[#B54118] text-[10px] font-bold tracking-[4px] mb-4">DIRECTORY</h4>
+                <ul className="text-[11px] space-y-2 opacity-60 tracking-[2px]">
+                  <li className="hover:text-[#B54118] cursor-pointer transition-colors">/PROJECTS</li>
+                  <li className="hover:text-[#B54118] cursor-pointer transition-colors">/LOGISTICS</li>
+                  <li className="hover:text-[#B54118] cursor-pointer transition-colors">/ARCHIVE</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-[#B54118] text-[10px] font-bold tracking-[4px] mb-4">SOCIAL</h4>
+                <ul className="text-[11px] space-y-2 opacity-60 tracking-[2px]">
+                  <li className="hover:text-[#B54118] cursor-pointer transition-colors">LINKEDIN</li>
+                  <li className="hover:text-[#B54118] cursor-pointer transition-colors">GITHUB</li>
+                  <li className="hover:text-[#B54118] cursor-pointer transition-colors">TWITTER</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Column 3: Contact Action */}
+            <div className="flex flex-col items-start md:items-end justify-between">
+              <div className="text-left md:text-right">
+                <div className="text-[10px] opacity-30 mb-1">LOCAL TIME (PK)</div>
+                <div className="font-['Orbitron'] text-xl">{times.pk}</div>
+              </div>
+              <button className="mt-8 group relative px-8 py-4 bg-transparent border border-[#B54118]/50 overflow-hidden transition-all hover:border-[#B54118]">
+                <div className="absolute inset-0 bg-[#B54118] translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+                <span className="relative z-10 font-['Orbitron'] text-[10px] tracking-[5px] group-hover:text-white transition-colors">
+                  INITIATE COMMS
+                </span>
+              </button>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="flex flex-col md:flex-row justify-between items-center pt-10 border-t border-white/5 opacity-20 text-[8px] tracking-[4px]">
+            <div>© 2026 UMAR // STARK INDUSTRIES PROTOCOL</div>
+            <div className="mt-4 md:mt-0">DESIGNED BY UMAR // POWERED BY NEXT.JS 16</div>
+          </div>
+        </div>
+
+        {/* Decorative HUD Corner */}
+        <div className="absolute bottom-0 right-0 w-32 h-32 opacity-5 pointer-events-none">
+          <div className="absolute bottom-4 right-4 border-r border-b border-[#B54118] w-full h-full" />
+        </div>
+      </footer>
     </div>
   );
 }
